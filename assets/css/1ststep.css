@@ -1,0 +1,127 @@
+/*$color--main-dark: #116eac;
+$color--main-contrast: #4CAF50;
+
+$color--bright-complementary: #9fd2f4;
+$color--dark-complementary: #68767b;
+$color--bright-ultra-complementary: #f5fcff;*/
+[v-cloak] {
+  display: none; }
+
+.users h2 {
+  color: #f7931a;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  display: inline-block;
+  padding-bottom: 34px;
+  position: relative; }
+  .users h2:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #f7931a;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+.users h3 {
+  color: #4D4D4D;
+  margin-top: 10px; }
+
+.users p {
+  color: #7c7c7c;
+  font-style: italic;
+  position: relative;
+  /*&:before {
+            display: inline-block;
+            content: "";
+            width: 60px;
+            height: 60px;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADwCAMAAAAJixmgAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEHRSTlMAECAwQFBgcICPn6+/z9/vIxqCigAAArtJREFUeAHt2VGq2zAUBmHLdhRHsS3tf7V9KPRBlEJ6yBlo519Ah68hspy7/Nr6fPfxpV2vdfn9sP7axnd3bnMS7R/j+ztmJNcv18hYm5RYf+tjEGKqX66RtedEZfrnyNs6YYl+HYlrE5bo32NwHzHQryN1z4mb33/nBs/Jm9/vI3eTN78/WHBKX7BgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsOGGCBQsWLFiwYMGdBef33yw4v19ZMNDvKBjoHyiY6N8kmOhvJBjpVxDM9CsHhvq1U2Cqv10QmOvXGwGT/Ue7ATDbDywQBPuCBQsWLFiwYMGCBQsWLFiwYMGCBQsWXP438C5YsGDBggULFhz9B2PgeB8CCxZcYDAQ/KfBgi8YfGUHTxh8ZgcbDG7ZwQMGH9nBCoNrdnCHwXt2sMDgkhzsHxDhPvBUYvvph3RCPyH4gMGP7OAKg9fk4P2BkO4DF0u2D9yz2D7wFWb7yV+hhH5C8PVBD+8Dbw5sH7hIs33gocT2R3zbBzm+D5zRbB94U2L7wK0D7ceD74CW6AMPYbYP/LjD9oEXJbYPPJPYPvBjFtsHvsFsHzii2T7w2kD148FeWHAvycFnAIr1gROL6ceDfQ04uT5wx2L7wAlN9OPBqwSUZB94IrH9v+xtASPbB66UbB88oJk+6wX6rBfoA+cV0A8E72AP6QeCZwn28H7mn1WYfiB478s0oJ8YbCWe4/vAxwv0Pw/2Y5kH9POCR1mmAf20YH+tyzygnxW8o/+7QD8QfD++qSX6f6zVsswD+jnB3kI1oB8I3u25ZWCJ/hTsZzv2koVF+ufPvY6j7tuSv7nPzznnnHPOOeecc84555xz7gereK99cjRvFgAAAABJRU5ErkJggg==);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            z-index: 0;
+            opacity: 0.2;
+            top: 0;
+            left: 0;
+        }*/ }
+  .users p.lead {
+    font-size: 1.1em;
+    margin-bottom: 15px; }
+
+.users .userPhoto {
+  width: 70px;
+  height: 70px;
+  border-radius: 80px;
+  border: 2px solid white;
+  float: left;
+  margin-left: -5px;
+  margin-right: 10px; }
+
+.pros .swIcon {
+  max-width: 75px;
+  background: #f7931a;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 5px; }
+
+@media screen and (max-width: 767px) {
+  .pros .row > div:not(:last-child) {
+    margin-bottom: 30px; } }
+
+.btcChart {
+  padding: 15px 15px 30px;
+  border: 1px solid lightgray;
+  background: #f9f9f9;
+  position: relative; }
+  @media screen and (max-width: 767px) {
+    .btcChart {
+      margin-bottom: 30px; } }
+  @media screen and (min-width: 768px) {
+    .btcChart {
+      margin-bottom: 60px; } }
+  @media screen and (max-width: 479px) {
+    .btcChart {
+      margin-top: 30px; } }
+  .btcChart:before {
+    content: "2015";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    bottom: 9px;
+    left: 15px;
+    text-align: left;
+    line-height: 1;
+    font-size: 11px;
+    color: #b9b9b9; }
+  .btcChart:after {
+    content: attr(data-chart-year);
+    display: block;
+    position: absolute;
+    z-index: 10;
+    bottom: 9px;
+    right: 15px;
+    text-align: right;
+    line-height: 1;
+    font-size: 11px;
+    color: #b9b9b9; }
+  .btcChart h4 {
+    margin: 0;
+    padding: 10px 10px 0;
+    background: #f9f9f9;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    display: inline-block;
+    position: absolute;
+    z-index: 5;
+    top: -25px;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+    font-size: 1.25em;
+    color: #f7931a; }
+  .btcChart #btc-chart {
+    font-size: 0; }

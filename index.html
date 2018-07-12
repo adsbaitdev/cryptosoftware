@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The CryptoSoftware</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/1ststep.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/crazypopup.css" rel="stylesheet" type="text/css"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="assets/images/favicons/manifest.html">
+    <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <div id="app">
+        <modal v-cloak :show.sync="showCrazyModal" :footer=false :close-button=false id="modal-crazy" @cancel="showCrazyModal = false">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="showCrazyModal = false"><span aria-hidden="true">&times;</span></button>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="modalTextWrap">
+                        <h1>Aspetta!</h1>
+                        <h2>Prima di andar via...</h2>
+                        <p class="lead">
+                            Stai per lasciare un sistema di trading unico nel suo genere che ti permette di guadagnare 1.000 € di profitti quotidiani.
+                        </p>
+                        <p class="lead">
+                            Unisciti alla nostra famiglia di traders contenti. Il Crypto Software è in <strong>regalo, per te, oggi</strong>.
+                        </p>
+                    </div>
+                    <form-optin project="crypto" locale="it" type="lightbox" action="#" @submitted="exitPopup = false"></form-optin>
+                </div>
+            </div>
+        </modal>
+
+        <section class="videoSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="headerLogo">
+                            <img src="assets/images/cryptosoft_logo_hrt_greyscale.svg" class="img-responsive" alt="CRYPTO"> 
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <h1 class="">Scambia bitcoin e altre criptomonete e guadagna €5.489 nelle prossime 24 ore</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ivideo v-if="'it' == 'de'" locale="it" ids="vimeo:235499888" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'nl'" locale="it" ids="vimeo:235507897" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'es'" locale="it" ids="vimeo:235503308" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'it'" locale="it" ids="vimeo:235506333" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'ru'" locale="it" ids="vimeo:235693339" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'sv'" locale="it" ids="vimeo:235559503" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'no'" locale="it" ids="vimeo:235530835" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'da'" locale="it" ids="vimeo:235501898" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'fi'" locale="it" ids="vimeo:235509721" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'pl'" locale="it" ids="vimeo:242069467" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'cs'" locale="it" ids="vimeo:252694028" :autoplay=autoplay></ivideo>
+                        <ivideo v-else locale="it" ids="vimeo:235498131" :autoplay=autoplay></ivideo>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="formWrap">
+                            <form-optin locale="it" action="#" type="video" project="crypto" @submitted="exitPopup = false"></form-optin>
+                            <div class="formSteps">
+                                <p class="activeStep">
+                                    <strong>1</strong>Ottieni il tuo link di accesso e guarda le istruzioni.
+                                </p>
+                                <div class="clearfix"></div>
+                                <p class="">
+                                    <strong>2</strong>Scambia usando il nostro software e guadagna soldi.
+                                </p>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pros">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="text-center">Cos’è Crypto Software?</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/images/icons/icon_exceptionalsoftware_white.svg" class="img-responsive swIcon" alt="Un software eccezionale">
+                        <h3>Un software eccezionale</h3>
+                        <p class="lead">Bitcoin è il futuro e il nostro software sa come trarne profitto. Approfittane ora.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/icons/icon_immediateresults_white.svg" class="img-responsive swIcon" alt="Risultati immediati">
+                        <h3>Risultati immediati</h3>
+                        <p class="lead">Dovresti essere in grado di prelevare i tuoi primi profitti in 24 ore. Guarda il video qui sopra per le istruzioni.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/icons/icon_moneymachine_white.svg" class="img-responsive swIcon" alt="Macchina da soldi">
+                        <h3>Macchina da soldi</h3>
+                        <p class="lead">Il nostro software ha generato per i nostri beta tester €25.115.477 di profitto nell&#39;ultimo mese. Ora tocca a te.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="users">
+            <div class="container">
+                <div class="btcChart" data-chart-year="2018">
+                    <h4 class="text-center">BTC/USD</h4>
+                    
+                    <div id="btc-chart"></div>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-center">I nostri utenti e la loro esperienza con Crypto Software</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/images/users/usr_4fsd2gf.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        <h3>Daniele</h3>
+                        <p class="lead">Ho appena pagato il mio mutuo. Pensavo che non sarei mai riuscito a farlo... e l’ho appena fatto. Tutto grazie a Crypto Software e al suo eccezionale software. Grazie, ragazzi!</p>
+                    </div>
+                    <div class="col-md-4">
+                        
+                        <img src="assets/images/users/usr_df14sd5.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        
+                        <h3>Gian</h3>
+                        <p class="lead">Ho appena richiesto un altro pagamento di €7.415. Non vedo l’ora di spenderlo con la mia ragazza. La porto a cena fuori? O ci prendiamo un giorno libero per andare in un bell’hotel in una località di campagna? Non avrei mai pensato di ritrovarmi con questo tipo di dilemma ... ma non mi dispiace affatto!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/users/usr_d451xu.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        <h3>Carlo</h3>
+                        <p class="lead">Ho solo iniziato una settimana fa ma sono accadute così tante cose da allora. Ho guadagnato i miei primi €10.000, li ho prelevati e li ho spesi. Ho appena guadagnato altri €10.000 che sono in arrivo... Non posso ringraziare Crypto Software abbastanza!</p>
+                    </div>
+                <div class="clearfix hidden-xs hidden-sm"></div>
+                    <div class="col-md-4">
+                        <img src="assets/images/users/usr_oju84d.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        <h3>Micaela</h3>
+                        <p class="lead">Guadagno €5.366 al giorno lavorando in media solo per due ore ogni giorno. È facile e puoi farlo anche tu - cogli l’occasione e unisciti ai membri di Crypto Software sulla strada verso il successo!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/users/usr_t14csd.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        <h3>Stefania</h3>
+                        <p class="lead">È difficile per me da credere. Una settimana fa ero una comune mamma di 3 bambini in una piccola città. Ora guadagno più di €5.000 al giorno ed ho la vita che ho sempre voluto. Grazie!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/users/usr_fds513.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        <h3>gino</h3>
+                        <p class="lead">Sono così felice di aver ricevuto l’invito a Crypto Software! Ho guadagnato €21.368 negli ultimi due giorni e li ho già passati sul mio conto corrente in banca. Oggi ho già guadagnato altri €8.474 e credo che farò lo stesso domani. Incredibile!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+        
+        <section class="formFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <h3 class="text-center promoBox">Scambia bitcoin e altre criptomonete e guadagna €5.489 nelle prossime 24 ore</h3>
+                        <div class="formWrap">
+                            <form-optin locale="it" action="#" type="footer" project="crypto"></form-optin>
+                        </div>
+                        <img src="assets/images/security_icons.min.png" class="img-responsive securityBadges" alt="Placeholder image"> </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <img src="assets/images/cryptosoft_logo_hrt_white.svg" class="img-responsive center-block" alt="CRYPTO">
+                <div>
+                    &copy; 2018 CryptoSoftware<br><br>
+                    <a href="legal/government-disclaimer.html" target="_blank">Government Disclaimer</a>|<a href="legal/privacy-policy.html" target="_blank">Privacy Policy</a>|<a href="legal/terms.html" target="_blank">Terms</a>|<a href="legal/earnings-disclaimer.html" target="_blank">Earnings Disclaimer</a>|<a href="legal/spam-policy.html" target="_blank">Spam Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/cm.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.10.2/bodymovin_light.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

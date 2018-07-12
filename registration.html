@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The CRYPTO Soft</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/2ndstep.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/registrationForm_modals.css" rel="stylesheet" type="text/css"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="images/favicons/manifest.html">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <div id="aff_9910"></div>
+    <div id="app">
+        <section class="videoSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="headerLogo">
+                            <img src="assets/images/cryptosoft_logo_hrt_greyscale.svg" class="img-responsive" alt="CRYPTO">
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <h1 class="">Guarda il video per le istruzioni e completa la registrazione</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ivideo v-if="'it' == 'de'" locale="it" ids="vimeo:235500833" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'nl'" locale="it" ids="vimeo:235507897" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'es'" locale="it" ids="vimeo:235504048" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'it'" locale="it" ids="vimeo:235507329" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'ru'" locale="it" ids="vimeo:235531984" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'sv'" locale="it" ids="vimeo:235532948" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'no'" locale="it" ids="vimeo:235530580" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'da'" locale="it" ids="vimeo:235502608" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'fi'" locale="it" ids="vimeo:235509258" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'pl'" locale="it" ids="vimeo:242068998" :autoplay=autoplay></ivideo>
+                        <ivideo v-else-if="'it' == 'cs'" locale="it" ids="vimeo:252694034" :autoplay=autoplay></ivideo>
+                        <ivideo v-else locale="it" ids="vimeo:235498751" :autoplay=autoplay></ivideo>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-0 col-md-offset-0 col-md-12">
+                        <div class="formWrap moreInputs">
+                            <form-registration @created="gtmtest" project="crypto" locale="it" action="#" @submitted="gtm"></form-registration>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/security_icons.min.png" class="img-responsive securityBadges" alt="Placeholder image">
+            </div>
+        </section>
+        <hr>
+        <section class="users successStories">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="text-center">Storie di successo</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/images/users/s2/usr_gdf14510.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        <h3>Giovanni <span>iniziato 1 giorno fa</span></h3>
+                        <p class="lead">Denaro investito: €250<br> <strong>Profitto realizzato: €5.874</strong></p>
+                    </div>
+                    <div class="col-md-4 userSeparator">
+                        <img src="assets/images/users/s2/usr_f15sev.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        <h3>Pietro <span>iniziato 2 giorni fa</span></h3>
+                        <p class="lead">Denaro investito: €500 <br> <strong>Profitto realizzato: €23.411</strong></p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/users/s2/usr_bmjidry4561s.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        <h3>Tania <span>iniziato 3 giorni fa</span></h3>
+                        <p class="lead">Denaro investito: €250 <br> <strong>Profitto realizzato: €14.622</strong></p>
+                    </div>
+                    <div class="clearfix hidden-xs hidden-sm"></div>
+                    <div class="col-md-4">
+                        <img src="assets/images/users/s2/usr_dfs44fds.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        <h3>Paolo <span>iniziato 1 giorno fa</span></h3>
+                        <p class="lead">Denaro investito: €250 <br> <strong>Profitto realizzato: €5.874</strong></p>
+                    </div>
+                    <div class="col-md-4 userSeparator">
+                        <img src="assets/images/users/s2/usr_df45fsd.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        <h3>Riccardo <span>iniziato 1 giorno fa</span></h3>
+                        <p class="lead">Denaro investito: €250 <br> <strong>Profitto realizzato: €10.411</strong></p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/users/s2/usr_gfasdf52sdf.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        <h3>Michela <span>iniziato 3 giorni fa</span></h3>
+                        <p class="lead">Denaro investito: €250 <br> <strong>Profitto realizzato: €11.622</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="appInfos">
+            <div class="container">
+                <div>
+                    <h2 class="text-center">
+                        Istruzioni passo per passo
+                    </h2>
+                    <p class="lead text-center appInfo col-lg-4">
+                        <strong>1</strong><br>Apri un conto con Crypto software
+                    </p>
+                    <p class="lead text-center appInfo col-lg-4">
+                        <strong>2</strong><br>Fai un deposito sul tuo conto di trading e inizia
+                    </p>
+                    <p class="lead text-center appInfo col-lg-4">
+                        <strong>3</strong><br>Segui i segnali del software e scambia
+                    </p>
+                    
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+        <section class="users">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="text-center">Storie vere dei nostri utenti</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/images/users/s2/usr_gdfs4511.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        <h3>Gian <span>iniziato 2 giorni fa</span></h3>
+                        <p class="lead">Ad essere sincero non mi sarei mai aspettato che iniziare a commerciare con Crypto Software fosse così facile. Ho depositato i miei €250 e dopo due giorni, nemmeno 48 ore complete, avevo più di €7.000 sul mio conto. È un miracolo!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/users/s2/usr_onjghj403.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        <h3>Aloisio <span>iniziato 1 giorno fa</span></h3>
+                        <p class="lead">Grazie per avermi dato questa possibilità. Sono contento di avere iniziato così presto con Crypto Software. Ho già triplicato il mio investimento dopo 1 ora. E ora, circa un giorno più tardi, ho già guadagnato €3.699. Tutto quello che posso dire è che... sono felice!!!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/users/s2/usr_xcbn8uo0.jpg" class="img-responsive userPhoto" alt="User Feedback">
+                        <h3>Cristiano <span>iniziato una settimana fa</span></h3>
+                        <p class="lead">Dopo avere guadagnato €4.122 nel mio primo giorno, non riuscivo a crederci. Ma dopo aver guadagnato altri €5.000 il giorno successivo e quasi €30.000 in una settimana, so che è reale. Se avete ancora la possibilità di iscrivervi, cogliete l’occasione...non ve ne pentirete!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pros mediaCoverage">
+            <div class="container">
+                <div class="text-center">
+                   <h2 class="text-center">Copertura mediatica</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/images/cryptocoinnews_logo.png" class="img-responsive" alt="CryptoCoinsNews.com">
+                        <h3><span>23/08/2017</span> CryptoCoinsNews.com</h3>
+                        <p class="lead">$ 154 miliardi: L’Aumento del Prezzo dei Bitcoin porta i Crypto Mercati a un Nuovo Record</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/businessinsider_logo.png" class="img-responsive" alt="BusinessInsider">
+                        <h3><span>31/08/2017</span> BusinessInsider</h3>
+                        <p class="lead">Bitcoin registra un nuovo record sopra i $4.700</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/fortune_logo.png" class="img-responsive" alt="Fortune.com">
+                        <h3><span>02/09/2017</span> Fortune.com</h3>
+                        <p class="lead">Bitcoin va oltre i $5.000 nell’ultimo frenetico rialzo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-4 col-md-8 col-md-offset-2">
+                        <h3 class="text-center promoBox"><strong>Completa la tua registrazione</strong> e inizia ora</h3>
+                        <div class="formWrap moreInputs">
+                            <form-registration @created="gtmtest" project="crypto" locale="it" action="#" @submitted="gtm"></form-registration>
+                        </div>
+                        <img src="assets/images/security_icons.min.png" class="img-responsive securityBadges" alt="Placeholder image"> </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <img src="assets/images/cryptosoft_logo_hrt_white.svg" class="img-responsive center-block" alt="CRYPTO">
+                <div>
+                    &copy; 2018 CryptoSoftware<br><br>
+                    <a href="legal/government-disclaimer.html" target="_blank">Government Disclaimer</a>|<a href="legal/privacy-policy.html" target="_blank">Privacy Policy</a>|<a href="legal/terms.html" target="_blank">Terms</a>|<a href="legal/earnings-disclaimer.html" target="_blank">Earnings Disclaimer</a>|<a href="legal/spam-policy.html" target="_blank">Spam Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/cm.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

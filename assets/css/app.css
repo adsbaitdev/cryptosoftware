@@ -1,0 +1,11 @@
+.hiddens{display: none;}
+.shows,img{display: block;}
+.body{font-family: Arial, sans-serif; font-size: 14px; margin: 0;}
+a{text-decoration: none; outline: 0;}
+input,select,button{outline: 0;}
+.font300{font-size: 300;}
+.font400{font-size: 400;}
+.font500{font-size: 500;}
+.font600{font-size: 600;}
+.font700{font-size: 700;}
+.font900{font-size: 900;}

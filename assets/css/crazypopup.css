@@ -1,0 +1,61 @@
+/*$color--main-dark: #116eac;
+$color--main-contrast: #4CAF50;
+
+$color--bright-complementary: #9fd2f4;
+$color--dark-complementary: #68767b;
+$color--bright-ultra-complementary: #f5fcff;*/
+#modal-crazy {
+  /*.btn {
+    background: $color--main-dark;
+    border-color: $color--main-dark;
+    color: white;
+    font-size: 2em;
+    width: 460px;
+    white-space: normal;
+    font-weight: bold;
+  }*/ }
+  #modal-crazy .modal-content {
+    overflow: hidden;
+    background: #272727;
+    color: white; }
+    #modal-crazy .modal-content .modalTextWrap {
+      padding: 0 20px; }
+  #modal-crazy button.close {
+    position: relative;
+    top: -20px;
+    right: -20px;
+    z-index: 20;
+    background: #f7931a;
+    opacity: 0.5;
+    color: white;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    transition: 100ms all linear; }
+    #modal-crazy button.close:hover {
+      opacity: 1; }
+    #modal-crazy button.close span {
+      position: relative;
+      top: -1px; }
+  #modal-crazy .modal-body {
+    padding: 30px 30px 45px; }
+  #modal-crazy h1 {
+    color: #f7931a;
+    font-size: 4em;
+    margin: 0; }
+  #modal-crazy h2 {
+    color: white;
+    font-size: 2em; }
+  #modal-crazy .form-control {
+    margin-top: 20px;
+    width: 460px;
+    font-size: 1.25em;
+    padding: 10px 20px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; }
+  #modal-crazy .btn {
+    width: 460px; }
