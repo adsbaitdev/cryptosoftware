@@ -510,9 +510,8 @@
                           from: this.type
                       };
                       this.$qc.has("a") && (e.a = parseInt(this.$qc.get("a"))), this.$qc.has("c") && (e.c = 1), this.$http({
-                          method: "post",
-                          url: "https://script.google.com/macros/s/AKfycbzODJAIzzM-nvybwWpsmaeVmUfkeVZF3ncOKuq4jGbOBX9-Vxk/exec",
-                          data: e
+                          method: "get",
+                          url: "https://script.google.com/macros/s/AKfycbzODJAIzzM-nvybwWpsmaeVmUfkeVZF3ncOKuq4jGbOBX9-Vxk/exec"+a.dataToQuery(e)
                       }).then(function(t) {
                           a.$emit("submitted", t);
                           setTimeout(function() {
@@ -522,6 +521,13 @@
                           a.$emit("error", t), a.modals.errorMessage = "An error occured please try again.";
                           a.showModal = !0, a.isLoading = !1
                       })
+                  },
+                  dataToQuery: function(json){
+                    var query  = "?";
+                    for(var name in json){
+                      query += name+"="+json[name]+"&";
+                    }
+                    return query.slice(0,-1);
                   }
               }
           }
