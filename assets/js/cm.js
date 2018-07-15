@@ -87,6 +87,22 @@
               }), document.getElementsByTagName("body")[0].addEventListener("mouseout", function(i) {
                   null == i.toElement && null == i.relatedTarget && o && t < 50 && (e.showCrazyModal = !0, o = !1)
               })
+          },
+          methods: {
+            gtm: function(e, o) {
+                window.dataLayer.push({
+                    event: "registration",
+                    a: e.a,
+                    o: e.o
+                })
+            },
+            gtmtest: function(e) {
+                window.dataLayer.push({
+                    event: "test",
+                    a: e.a,
+                    o: e.o
+                })
+            }
           }
       });
 
