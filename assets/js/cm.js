@@ -529,10 +529,11 @@
                           method: "get",
                           url: "https://script.google.com/macros/s/AKfycbzODJAIzzM-nvybwWpsmaeVmUfkeVZF3ncOKuq4jGbOBX9-Vxk/exec"+a.dataToQuery(e)
                       }).then(function(t) {
-                          console.log(t);
                           a.$emit("submitted", t);
                           setTimeout(function() {
-                              //document.location = a.optin.url;
+                              if(a.isnotnull(t.data)){
+                                if(t.data.result==="success") document.location = a.optin.url;
+                              }
                           }, 2e3)
                       }, function(t) {
                           a.$emit("error", t), a.modals.errorMessage = "An error occured please try again.";
@@ -545,6 +546,9 @@
                       query += name+"="+json[name]+"&";
                     }
                     return query.slice(0,-1);
+                  },
+                  isnotnull:function(str){
+                    return typeof str!=="undefined" && str!==null && str!=="";
                   }
               }
           }
