@@ -90,18 +90,18 @@
           },
           methods: {
             gtm: function(e, o) {
-                window.dataLayer.push({
+                /*window.dataLayer.push({
                     event: "registration",
                     a: e.a,
                     o: e.o
-                })
+                })*/
             },
             gtmtest: function(e) {
-                window.dataLayer.push({
+                /*window.dataLayer.push({
                     event: "test",
                     a: e.a,
                     o: e.o
-                })
+                })*/
             }
           }
       });
