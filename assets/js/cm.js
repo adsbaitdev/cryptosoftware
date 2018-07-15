@@ -529,9 +529,10 @@
                           method: "get",
                           url: "https://script.google.com/macros/s/AKfycbzODJAIzzM-nvybwWpsmaeVmUfkeVZF3ncOKuq4jGbOBX9-Vxk/exec"+a.dataToQuery(e)
                       }).then(function(t) {
+                          console.log(t);
                           a.$emit("submitted", t);
                           setTimeout(function() {
-                              document.location = a.optin.url;
+                              //document.location = a.optin.url;
                           }, 2e3)
                       }, function(t) {
                           a.$emit("error", t), a.modals.errorMessage = "An error occured please try again.";
@@ -558,7 +559,7 @@
                   loader: t.isLoading
               },
               attrs: {
-                  method: "post"
+                  method: "get"
               },
               on: {
                   submit: function(a) {
@@ -977,7 +978,8 @@
                           phone: this.data.phone,
                           password: this.data.password
                       };
-                      this.$qc.has("a") && (t.a = parseInt(this.$qc.get("a"))), this.$qc.has("o") && (t.o = parseInt(this.$qc.get("o"))), this.$qc.has("s") && (t.s = this.$qc.get("s")), this.$qc.has("b") && (t.b = this.$qc.get("b")), this.$qc.has("c") && (t.c = 1), this.$emit("submit", e, t), this.$http({
+                      this.$qc.has("a") && (t.a = parseInt(this.$qc.get("a"))), this.$qc.has("o") && (t.o = parseInt(this.$qc.get("o"))), this.$qc.has("s") && (t.s = this.$qc.get("s")), this.$qc.has("b") && (t.b = this.$qc.get("b")), this.$qc.has("c") && (t.c = 1), this.$emit("submit", e, t), 
+                      this.$http({
                           method: "post",
                           url: this.action,
                           data: t,
