@@ -1,0 +1,28 @@
+/* loading screen */
+.loadingin {
+  font-size: 26px;
+  text-align: center;
+  color: #525252;
+  display: none;
+  padding: 20px;
+  background: #1b5571;
+  color: #fff; }
+  .loadingin .waitmsg {
+    margin-top: 0%;
+    margin-bottom: 30px; }
+  .loadingin i {
+    font-size: 64px;
+    color: #f7b541; }
+  .loadingin .prc {
+    font-size: 54px;
+    font-weight: bold;
+    margin: 20px; }
+  .loadingin .infomsg {
+    font-size: 18px; }
+
+#modal-robot {
+  text-align: center;
+  line-height: 3em; }
+
+#modal-error {
+  z-index: 10000; }

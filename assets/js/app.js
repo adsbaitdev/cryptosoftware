@@ -12,7 +12,7 @@ var lp = {
 			lp.loop(forms,lp.form.check,'click');
 		},
 		check: function(arr){
-			console.log(this);
+			//console.log(this);
 		}
 	},
 	loop: function(arr,callback,event,byname){
